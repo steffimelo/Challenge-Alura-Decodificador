@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="icon" href="./assets/alura_favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html">
+            <img class="logoalura" src="./assets/logoalura.png" alt="Logo da Alura">
+        </a>
+    </header>
+
+    <div class="container">
+        <div class="esquerda">
+            <form>
+                <textarea id="texto-principal" type="text" placeholder="Digite seu texto..."></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="./assets/icon_exclamacao.svg">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button class="bnt-criptografar" id="criptografar">Criptografar</button>
+                        <button class="bnt-descriptografar" id="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="direita">
+            <div class="sem-retorno">
+                <img src="./assets/personagem.svg" id="mensagem-nao-encontrada" alt="personagem">
+                <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="texto-criptografado d-none">
+                <p></p>
+                <button class="btn-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Alura Challenge - Oracle Next Education</p>
+        <p class="footer__text">Desenvolvido por <a href="https://www.linkedin.com/in/stefaniesmelo/"
+                target="_blank"><strong>Stefanie Melo</strong></a></p>
+    </footer>
+
+    <script src="js/criptografa-e-descriptografa.js"></script>
+    <script src="js/criptografo.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/text-area.js"></script>
+</body>
+
+</html>
